@@ -19,6 +19,7 @@ function App() {
     <>
       <div className="card-to-do">
         <h1>Lista de Tareas</h1>
+        <iframe title="Azure Data Explorer" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNzFkOTE0MjUtY2Q0Zi00YWZlLWExZGMtMDY0NDBmMjJhYTQyIiwidCI6ImFkZjMzZTg0LTc1MzEtNDJhOS05MWMyLThhNjg4MWUxOWNkZiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
         <div className="counter-todos">
           <h3>N° Tareas: <span>{todosCount}</span></h3>
           <h3>Pendientes: <span>{pendingTodosCount}</span></h3>
@@ -27,7 +28,9 @@ function App() {
         <div className="add-todo">
           <h3>Agregar Tarea</h3>
           <TodoAdd handleNewTodo={handleNewTodo} />
+          
         </div>
+        
 
         <TodoList 
           todos={todos}
